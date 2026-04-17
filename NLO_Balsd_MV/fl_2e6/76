@@ -1,0 +1,43 @@
+# NLODIS code, git commit 6f8b215bbfa730cc2a0fd50f64b16a03880a3113 local repo DIRTY
+fit,x,Q2,FL
+# === NLODIS Configuration Summary ===
+# Order: NLO
+# Subtraction Scheme: Unsubtracted (UNSUB)
+# Nc Scheme: Finite Nc
+# Running Coupling Scale: Smallest dipole
+# Heavy quark x scheme: MassIndependentX, x = x_Bj = Q^2/(Q^2 + W^2)
+# IR Freezing Scheme: Smooth
+# Maximum dipole size (maxr): 30 GeV^-1
+# Running coupling C^2 factor: 10.105
+# Non-perturbative scale (Q0^2): 1 GeV^2
+# Proton transverse area: 57.7321 GeV^-2 = 22.4813 mb
+# Quark flavors and masses:
+#   light, m=0.01 GeV (e=0.816497)
+#   c, m=1.07198 GeV (e=0.666667)
+# Active flavors for running coupling: determined from quark list
+# Dipole: Data read from file bkdipoles/NLO_Balsd_MV/bks/76.dat, minr: 1e-05 GeV^(-1), maxr: 89.8118 GeV^(-1), rpoints: 150 initial rapidity 0, maximum rapidity 15.6 Q_{s,0}^2(initial rapidity) = 0.00802189 GeV^2, Q_{s,0}^2(Y=ln 1/0.01) = 0.03944 GeV^2 [ N(r^2=2/Q_s^2) = 0.393469]
+# Cuba integration method: vegas, maxeval 2000000, relaccuracy 0.001 cores not set (using default)
+# ===================================
+
+NLOBK_MV_smallest,2.8e-05,1.5,0.127994
+NLOBK_MV_smallest,4.3e-05,2,0.133957
+NLOBK_MV_smallest,5.9e-05,2.5,0.138522
+NLOBK_MV_smallest,8.8e-05,3.5,0.147586
+NLOBK_MV_smallest,0.000129,5,0.158563
+NLOBK_MV_smallest,0.000169,6.5,0.166962
+NLOBK_MV_smallest,0.000224,8.5,0.175265
+NLOBK_MV_smallest,0.000319,12,0.186249
+NLOBK_MV_smallest,0.000402,15,0.192281
+NLOBK_MV_smallest,0.00054,20,0.200031
+NLOBK_MV_smallest,0.000687,25,0.204175
+NLOBK_MV_smallest,0.000958,35,0.211819
+NLOBK_MV_smallest,0.00121,45,0.217247
+NLOBK_MV_smallest,0.00157,60,0.223728
+NLOBK_MV_smallest,0.00243,90,0.226545
+NLOBK_MV_smallest,0.00303,120,0.234222
+NLOBK_MV_smallest,0.00402,150,0.231575
+NLOBK_MV_smallest,0.00541,200,0.233452
+NLOBK_MV_smallest,0.00736,250,0.228675
+# Warning: Cuba (vegas) integration (dimension 6) accuracy 11.3267%,  result -6.96033e-09 +/- 7.88379e-10. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy 10.5461%,  result 2.56917e-09 +/- 2.70946e-10. It is recommended to use more MC integration points
+NLOBK_MV_smallest,0.00986,346,0.232397

@@ -1,0 +1,60 @@
+# NLODIS code, git commit 6f8b215bbfa730cc2a0fd50f64b16a03880a3113 local repo DIRTY
+fit,x,Q2,F2 light,FL light,F2 charm,FL charm,F2_LO
+# === NLODIS Configuration Summary ===
+# Order: NLO
+# Subtraction Scheme: Unsubtracted (UNSUB)
+# Nc Scheme: Finite Nc
+# Running Coupling Scale: Smallest dipole
+# Heavy quark x scheme: MassIndependentX, x = x_Bj = Q^2/(Q^2 + W^2)
+# IR Freezing Scheme: Smooth
+# Maximum dipole size (maxr): 30 GeV^-1
+# Running coupling C^2 factor: 9.59572
+# Non-perturbative scale (Q0^2): 1 GeV^2
+# Proton transverse area: 54.1156 GeV^-2 = 21.0731 mb
+# Quark flavors and masses:
+#   light, m=0.01 GeV (e=0.816497)
+#   c, m=1.02774 GeV (e=0.666667)
+# Active flavors for running coupling: determined from quark list
+# Dipole: Data read from file bkdipoles/NLO_Balsd_MV/bks/55.dat, minr: 1e-05 GeV^(-1), maxr: 89.8118 GeV^(-1), rpoints: 150 initial rapidity 0, maximum rapidity 15.6 Q_{s,0}^2(initial rapidity) = 0.00864269 GeV^2, Q_{s,0}^2(Y=ln 1/0.01) = 0.0422246 GeV^2 [ N(r^2=2/Q_s^2) = 0.393469]
+# Cuba integration method: vegas, maxeval 2000000, relaccuracy 0.001 cores not set (using default)
+# ===================================
+
+NLOBK_MV_smallest,1e-05,4.5,1.17967,0.219084,0.250271,0.0323381,0.982919
+NLOBK_MV_smallest,1.5e-05,4.5,1.0976,0.201103,0.227325,0.0294807,0.914455
+NLOBK_MV_smallest,2.25e-05,4.5,1.0194,0.184219,0.206086,0.0267495,0.849598
+NLOBK_MV_smallest,3.375e-05,4.5,0.945765,0.168305,0.186062,0.0242391,0.788238
+NLOBK_MV_smallest,5.0625e-05,4.5,0.875569,0.153304,0.167828,0.0219022,0.730258
+NLOBK_MV_smallest,7.59375e-05,4.5,0.809004,0.139116,0.150724,0.0197318,0.675548
+NLOBK_MV_smallest,0.000113906,4.5,0.746015,0.125742,0.135098,0.0177281,0.623988
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 12.2846%,  result -0.00694608 +/- 0.000853296. It is recommended to use more MC integration points
+NLOBK_MV_smallest,0.000170859,4.5,0.686971,0.113337,0.120608,0.0158511,0.575455
+NLOBK_MV_smallest,0.000256289,4.5,0.631594,0.101716,0.107381,0.0141416,0.529835
+NLOBK_MV_smallest,0.000384434,4.5,0.57975,0.09095,0.0953704,0.0125974,0.487018
+NLOBK_MV_smallest,0.00057665,4.5,0.53169,0.0810278,0.0843952,0.0111418,0.446887
+NLOBK_MV_smallest,0.000864976,4.5,0.48693,0.0718562,0.0744276,0.00983706,0.409331
+NLOBK_MV_smallest,0.00129746,4.5,0.445939,0.0634511,0.0655924,0.00866795,0.374237
+NLOBK_MV_smallest,0.0019462,4.5,0.408752,0.0558519,0.057692,0.00761037,0.341492
+NLOBK_MV_smallest,0.00291929,4.5,0.374737,0.0488963,0.0507003,0.00670044,0.310986
+NLOBK_MV_smallest,0.00437894,4.5,0.344298,0.0427998,0.0444154,0.00582701,0.282614
+NLOBK_MV_smallest,0.00656841,4.5,0.317181,0.0373835,0.039092,0.00511673,0.256274
+NLOBK_MV_smallest,0.00985261,4.5,0.293221,0.032571,0.0343005,0.00445612,0.231862
+NLOBK_MV_smallest,1e-05,45,2.66772,0.488777,0.991992,0.218779,2.0792
+NLOBK_MV_smallest,1.5e-05,45,2.45238,0.44378,0.897009,0.198325,1.90964
+NLOBK_MV_smallest,2.25e-05,45,2.2506,0.403561,0.810105,0.179625,1.75177
+NLOBK_MV_smallest,3.375e-05,45,2.05867,0.365303,0.730199,0.162123,1.60499
+NLOBK_MV_smallest,5.0625e-05,45,1.88404,0.330798,0.655207,0.146588,1.46869
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 28.5887%,  result 0.00129406 +/- 0.000369956. It is recommended to use more MC integration points
+NLOBK_MV_smallest,7.59375e-05,45,1.72152,0.29781,0.587556,0.131918,1.34227
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 11.5355%,  result -0.00292475 +/- 0.000337385. It is recommended to use more MC integration points
+NLOBK_MV_smallest,0.000113906,45,1.57111,0.267691,0.525623,0.118441,1.22517
+NLOBK_MV_smallest,0.000170859,45,1.42772,0.239944,0.469276,0.106204,1.11683
+NLOBK_MV_smallest,0.000256289,45,1.2983,0.215265,0.417347,0.0949377,1.01673
+NLOBK_MV_smallest,0.000384434,45,1.17601,0.191931,0.370379,0.0842596,0.924363
+NLOBK_MV_smallest,0.00057665,45,1.06558,0.171056,0.32723,0.0746559,0.839256
+NLOBK_MV_smallest,0.000864976,45,0.962971,0.151623,0.288211,0.0664726,0.760946
+NLOBK_MV_smallest,0.00129746,45,0.870889,0.134388,0.253318,0.0588648,0.688991
+NLOBK_MV_smallest,0.0019462,45,0.786273,0.118573,0.222418,0.0516745,0.62297
+NLOBK_MV_smallest,0.00291929,45,0.710713,0.104318,0.194848,0.0457144,0.562483
+NLOBK_MV_smallest,0.00437894,45,0.640292,0.0915592,0.169681,0.0400747,0.507152
+NLOBK_MV_smallest,0.00656841,45,0.578644,0.0803464,0.14821,0.0349045,0.456619
+NLOBK_MV_smallest,0.00985261,45,0.522363,0.0702013,0.129095,0.0306251,0.41054

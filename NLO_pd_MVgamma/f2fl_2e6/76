@@ -1,0 +1,59 @@
+# NLODIS code, git commit 6f8b215bbfa730cc2a0fd50f64b16a03880a3113 local repo DIRTY
+# === NLODIS Configuration Summary ===
+# Order: NLO
+# Subtraction Scheme: Unsubtracted (UNSUB)
+# Nc Scheme: Finite Nc
+# Running Coupling Scale: Parent dipole
+# Heavy quark x scheme: MassIndependentX, x = x_Bj = Q^2/(Q^2 + W^2)
+# IR Freezing Scheme: Smooth
+# Maximum dipole size (maxr): 30 GeV^-1
+# Running coupling C^2 factor: 6234.78
+# Non-perturbative scale (Q0^2): 1 GeV^2
+# Proton transverse area: 58.1108 GeV^-2 = 22.6288 mb
+# Quark flavors and masses:
+#   light, m=0.01 GeV (e=0.816497)
+#   c, m=1.18455 GeV (e=0.666667)
+# Active flavors for running coupling: determined from quark list
+# Dipole: Data read from file bkdipoles/NLO_pd_MVgamma/bks/76.dat, minr: 1e-05 GeV^(-1), maxr: 25.8434 GeV^(-1), rpoints: 100 initial rapidity 0, maximum rapidity 15.6 Q_{s,0}^2(initial rapidity) = 0.188347 GeV^2, Q_{s,0}^2(Y=ln 1/0.01) = 0.233566 GeV^2 [ N(r^2=2/Q_s^2) = 0.393469]
+# Cuba integration method: vegas, maxeval 2000000, relaccuracy 0.001 cores not set (using default)
+# ===================================
+
+NLOBK_MVgamma_parent,1e-05,4.5,1.11983,0.249705,0.239307,0.0270004,1.53387
+NLOBK_MVgamma_parent,1.5e-05,4.5,1.062,0.235495,0.22121,0.0251112,1.46349
+NLOBK_MVgamma_parent,2.25e-05,4.5,1.00533,0.221804,0.20357,0.0232631,1.39553
+NLOBK_MVgamma_parent,3.375e-05,4.5,0.95176,0.208904,0.186958,0.0214758,1.32992
+NLOBK_MVgamma_parent,5.0625e-05,4.5,0.899392,0.196177,0.17106,0.0197965,1.26662
+NLOBK_MVgamma_parent,7.59375e-05,4.5,0.848574,0.183653,0.156149,0.0181765,1.20558
+NLOBK_MVgamma_parent,0.000113906,4.5,0.800759,0.171868,0.141762,0.0166351,1.14671
+NLOBK_MVgamma_parent,0.000170859,4.5,0.754037,0.160088,0.128265,0.0151561,1.08996
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 19.5775%,  result 0.00538808 +/- 0.00105485. It is recommended to use more MC integration points
+NLOBK_MVgamma_parent,0.000256289,4.5,0.709694,0.148913,0.115456,0.013713,1.03528
+NLOBK_MVgamma_parent,0.000384434,4.5,0.667284,0.138008,0.103299,0.0123544,0.982615
+NLOBK_MVgamma_parent,0.00057665,4.5,0.62628,0.127689,0.0920002,0.0111052,0.931897
+NLOBK_MVgamma_parent,0.000864976,4.5,0.587697,0.117488,0.0810255,0.00990492,0.883072
+NLOBK_MVgamma_parent,0.00129746,4.5,0.551728,0.107903,0.0711136,0.00875685,0.836084
+NLOBK_MVgamma_parent,0.0019462,4.5,0.518085,0.0985995,0.0620039,0.0076649,0.790876
+NLOBK_MVgamma_parent,0.00291929,4.5,0.487202,0.089924,0.0534455,0.00669463,0.74739
+NLOBK_MVgamma_parent,0.00437894,4.5,0.459038,0.0816447,0.0456143,0.00574022,0.705582
+NLOBK_MVgamma_parent,0.00656841,4.5,0.434195,0.0739701,0.0388607,0.00493122,0.6654
+NLOBK_MVgamma_parent,0.00985261,4.5,0.412154,0.066944,0.032575,0.00413969,0.6268
+NLOBK_MVgamma_parent,1e-05,45,2.5036,0.541502,1.02372,0.22325,3.23777
+NLOBK_MVgamma_parent,1.5e-05,45,2.32328,0.501309,0.94225,0.205905,3.03176
+NLOBK_MVgamma_parent,2.25e-05,45,2.15958,0.46297,0.862852,0.189436,2.83587
+NLOBK_MVgamma_parent,3.375e-05,45,2.00115,0.426968,0.786823,0.173479,2.64975
+NLOBK_MVgamma_parent,5.0625e-05,45,1.84892,0.392243,0.716984,0.158795,2.47303
+NLOBK_MVgamma_parent,7.59375e-05,45,1.70857,0.359952,0.651697,0.144782,2.30536
+NLOBK_MVgamma_parent,0.000113906,45,1.57287,0.328669,0.588268,0.131439,2.14637
+NLOBK_MVgamma_parent,0.000170859,45,1.43998,0.299507,0.528071,0.118719,1.99574
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 12.2751%,  result 0.00287776 +/- 0.000353249. It is recommended to use more MC integration points
+NLOBK_MVgamma_parent,0.000256289,45,1.31686,0.271972,0.472483,0.107175,1.85313
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 16.5052%,  result -0.00210021 +/- 0.000346644. It is recommended to use more MC integration points
+NLOBK_MVgamma_parent,0.000384434,45,1.19852,0.245195,0.420641,0.0957383,1.71824
+NLOBK_MVgamma_parent,0.00057665,45,1.0901,0.220466,0.371891,0.0854967,1.59076
+NLOBK_MVgamma_parent,0.000864976,45,0.991877,0.196723,0.325935,0.0755814,1.47038
+NLOBK_MVgamma_parent,0.00129746,45,0.8995,0.175612,0.283717,0.066748,1.35684
+NLOBK_MVgamma_parent,0.0019462,45,0.80975,0.155059,0.244577,0.0581745,1.24983
+NLOBK_MVgamma_parent,0.00291929,45,0.727042,0.136268,0.208764,0.0502299,1.1491
+NLOBK_MVgamma_parent,0.00437894,45,0.653443,0.118563,0.175192,0.0430295,1.05438
+NLOBK_MVgamma_parent,0.00656841,45,0.586974,0.102076,0.145604,0.0364848,0.96545
+NLOBK_MVgamma_parent,0.00985261,45,0.528305,0.0872828,0.119103,0.0306146,0.882078
