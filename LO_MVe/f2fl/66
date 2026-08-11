@@ -1,78 +1,568 @@
-# NLODIS code, git commit 70cc4a5551265a3f63a20c89a07e32af44b0d49a local repo CLEAN
+# NLODIS code, git commit 6f8b215bbfa730cc2a0fd50f64b16a03880a3113 local repo DIRTY
 # === NLODIS Configuration Summary ===
 # Order: LO
-# Subtraction Scheme: Unsubstracted (UNSUB)
+# Subtraction Scheme: Unsubtracted (UNSUB)
 # Nc Scheme: Finite Nc
 # Running Coupling Scale: Parent dipole
+# Heavy quark x scheme: MassIndependentX, x = x_Bj = Q^2/(Q^2 + W^2)
 # IR Freezing Scheme: Smooth
-# Maximum dipole size (maxr): 99 GeV^-1
+# Maximum dipole size (maxr): 30 GeV^-1
 # Running coupling C^2 factor: 6.52698
 # Non-perturbative scale (Q0^2): 1 GeV^2
 # Proton transverse area: 39.1396 GeV^-2 = 15.2413 mb
 # Quark flavors and masses:
-#   light, m=0.005 GeV (e=0.816497)
+#   light, m=0.01 GeV (e=0.816497)
 #   c, m=99999 GeV (e=0.666667)
+# Active flavors for running coupling: 4
 # Dipole: Data read from file bkdipoles/LO_MVe/bks/66.dat, minr: 1e-09 GeV^(-1), maxr: 100 GeV^(-1), rpoints: 150 initial rapidity 4.60517, maximum rapidity 16.8052 Q_{s,0}^2(initial rapidity) = 0.257231 GeV^2, Q_{s,0}^2(Y=ln 1/0.01) = 0.257231 GeV^2 [ N(r^2=2/Q_s^2) = 0.393469]
-# Cuba integration method: vegas, maxeval 1000000, relaccuracy 0.0001 cores not set (using default)
+# Cuba integration method: vegas, maxeval 10000000, relaccuracy 0.001 cores not set (using default)
 # ===================================
 
-LO_MVe,0.01,1.5,0.358098,0.0754027
-LO_MVe,0.01,4.5,0.485703,0.0922294
-LO_MVe,0.01,10,0.576805,0.100073
-LO_MVe,0.01,45,0.739812,0.108474
-LO_MVe,0.01,100,0.819756,0.11146
-LO_MVe,0.01,200,0.883722,0.113951
-LO_MVe,0.005,1.5,0.391041,0.0828776
-LO_MVe,0.005,4.5,0.551506,0.107607
-LO_MVe,0.005,10,0.673959,0.122109
-LO_MVe,0.005,45,0.909052,0.14281
-LO_MVe,0.005,100,1.03267,0.151705
-LO_MVe,0.005,200,1.13696,0.158935
-LO_MVe,0.0025,1.5,0.429146,0.0913398
-LO_MVe,0.0025,4.5,0.626205,0.124648
-LO_MVe,0.0025,10,0.78453,0.146761
-LO_MVe,0.0025,45,1.10558,0.182713
-LO_MVe,0.0025,100,1.28319,0.199541
-LO_MVe,0.0025,200,1.43834,0.213425
-LO_MVe,0.00125,1.5,0.47235,0.100785
-LO_MVe,0.00125,4.5,0.710425,0.143547
-LO_MVe,0.00125,10,0.90994,0.174414
-LO_MVe,0.00125,45,1.33335,0.229103
-LO_MVe,0.00125,100,1.5774,0.256313
-LO_MVe,0.00125,200,1.79632,0.279221
-LO_MVe,0.000625,1.5,0.52039,0.11116
-LO_MVe,0.000625,4.5,0.804308,0.16438
-LO_MVe,0.000625,10,1.05085,0.205272
-LO_MVe,0.000625,45,1.59482,0.282577
-LO_MVe,0.000625,100,1.91932,0.322952
-LO_MVe,0.000625,200,2.21683,0.357631
-LO_MVe,0.0003125,1.5,0.573296,0.122459
-LO_MVe,0.0003125,4.5,0.908502,0.187302
-LO_MVe,0.0003125,10,1.20873,0.23969
-LO_MVe,0.0003125,45,1.89435,0.344128
-LO_MVe,0.0003125,100,2.31586,0.400978
-LO_MVe,0.0003125,200,2.7096,0.450752
-LO_MVe,0.00015625,1.5,0.630936,0.134638
-LO_MVe,0.00015625,4.5,1.02327,0.212373
-LO_MVe,0.00015625,10,1.38446,0.277876
-LO_MVe,0.00015625,45,2.23514,0.414498
-LO_MVe,0.00015625,100,2.77235,0.491599
-LO_MVe,0.00015625,200,3.28253,0.560321
-LO_MVe,7.8125e-05,1.5,0.693302,0.147667
-LO_MVe,7.8125e-05,4.5,1.14913,0.23969
-LO_MVe,7.8125e-05,10,1.57934,0.320117
-LO_MVe,7.8125e-05,45,2.62163,0.494691
-LO_MVe,7.8125e-05,100,3.29611,0.596447
-LO_MVe,7.8125e-05,200,3.94631,0.688679
-LO_MVe,3.90625e-05,1.5,0.760298,0.161496
-LO_MVe,3.90625e-05,4.5,1.28636,0.269289
-LO_MVe,3.90625e-05,10,1.79438,0.366618
-LO_MVe,3.90625e-05,45,3.05778,0.585599
-LO_MVe,3.90625e-05,100,3.89393,0.717047
-LO_MVe,3.90625e-05,200,4.71113,0.838078
-LO_MVe,1.95313e-05,1.5,0.831822,0.176067
-LO_MVe,1.95313e-05,4.5,1.43525,0.301189
-LO_MVe,1.95313e-05,10,2.03055,0.417563
-LO_MVe,1.95313e-05,45,3.54775,0.688159
-LO_MVe,1.95313e-05,100,4.57315,0.855051
-LO_MVe,1.95313e-05,200,5.58818,1.01101
+LO_MVe,1e-05,4.5,1.59251,0.33413,9.55441e-12,2.85093e-26,1.59251
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 17.8009%,  result 3.94457e-18 +/- 7.0217e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 1132.82%,  result -6.19844e-20 +/- 7.02169e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.34548e+216%,  result -5.10512e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 5678.8%,  result 1.20956e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 37274.9%,  result 1.84275e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 2.14022e+226%,  result -3.2094e-244 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,1.5e-05,4.5,2.54343,0.607681,6.75421e-12,5.27836e-21,1.49718
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 14.898%,  result 4.71318e-18 +/- 7.0217e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 951.87%,  result -7.37673e-20 +/- 7.02168e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.56322e+216%,  result -4.39401e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 6785.81%,  result 1.01223e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 44537.1%,  result 1.54227e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 2.48659e+226%,  result -2.76235e-244 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,2.25e-05,4.5,2.39598,0.573083,5.69452e-12,4.41733e-21,1.40594
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 12.4162%,  result 5.65529e-18 +/- 7.0217e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 797.173%,  result -8.80822e-20 +/- 7.02167e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.82188e+216%,  result -3.77019e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 8134.98%,  result 8.44357e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 53399.6%,  result 1.28631e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 2.89803e+226%,  result -2.37017e-244 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,3.375e-05,4.5,2.25708,0.539909,4.79406e-12,3.68465e-21,1.31875
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 10.3119%,  result 6.80931e-18 +/- 7.0217e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 663.228%,  result -1.05871e-19 +/- 7.02166e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 2.13032e+216%,  result -3.22431e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 9785.21%,  result 7.0196e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 64318.6%,  result 1.06794e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 3.38867e+226%,  result -2.027e-244 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,5.0625e-05,4.5,2.1196,0.508112,4.03119e-12,3.06271e-21,1.23558
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 549.138%,  result -1.27867e-19 +/- 7.02164e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 2.49966e+216%,  result -2.7479e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 11810.3%,  result 5.81595e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 77659.3%,  result 8.84483e-23 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 3.97618e+226%,  result -1.72749e-244 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,7.59375e-05,4.5,1.99061,0.477534,3.38687e-12,2.53742e-21,1.15638
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 454.887%,  result -1.54359e-19 +/- 7.02161e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 2.94384e+216%,  result -2.33328e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 14307.6%,  result 4.80081e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 94089.1%,  result 7.30034e-23 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 4.68277e+226%,  result -1.46683e-244 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.000113906,4.5,1.86744,0.448295,2.84445e-12,2.0945e-21,1.08107
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 374.57%,  result -1.87457e-19 +/- 7.02156e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 3.48051e+216%,  result -1.97351e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 17397.5%,  result 3.94817e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 114414%,  result 6.00347e-23 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 5.53647e+226%,  result -1.24065e-244 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.000170859,4.5,1.74995,0.420211,2.38937e-12,1.7225e-21,1.00961
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 307.587%,  result -2.28277e-19 +/- 7.0215e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 4.13207e+216%,  result -1.66232e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 21235.7%,  result 3.23457e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 139439%,  result 4.92604e-23 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 6.57299e+226%,  result -1.04501e-244 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.000256289,4.5,1.63961,0.393373,2.00895e-12,1.41146e-21,0.941914
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 13.7237%,  result -0.0122227 +/- 0.00167741. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 252.628%,  result -2.77934e-19 +/- 7.02139e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 4.92726e+216%,  result -1.39404e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 26022.4%,  result 2.63958e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 170948%,  result 4.01807e-23 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 7.83803e+226%,  result -8.76346e-245 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.000384434,4.5,1.53391,0.367807,1.69213e-12,1.15176e-21,0.877901
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 205.044%,  result -3.42426e-19 +/- 7.02124e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 5.9031e+216%,  result -1.1636e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 32016.4%,  result 2.14541e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 210417%,  result 3.26439e-23 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 9.39056e+226%,  result -7.31461e-245 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.00057665,4.5,1.43369,0.343326,1.42934e-12,9.36077e-22,0.817491
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 166.802%,  result -4.20917e-19 +/- 7.02099e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 7.10767e+216%,  result -9.66396e-235 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 39548.3%,  result 1.73682e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 259989%,  result 2.64197e-23 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.13072e+227%,  result -6.07476e-245 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.000864976,4.5,1.33915,0.320101,1.21227e-12,7.57775e-22,0.760596
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 134.653%,  result -5.21384e-19 +/- 7.02061e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 8.60389e+216%,  result -7.9834e-235 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 49048.6%,  result 1.40041e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 322349%,  result 2.13087e-23 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.36881e+227%,  result -5.01811e-245 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.00129746,4.5,1.24985,0.297798,1.03374e-12,6.11024e-22,0.70713
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 108.233%,  result -6.48598e-19 +/- 7.02e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.04747e+217%,  result -6.55752e-235 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 61072.9%,  result 1.12469e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 401381%,  result 1.7113e-23 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.66657e+227%,  result -4.12154e-245 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.0019462,4.5,1.16634,0.276508,8.8758e-13,4.90722e-22,0.657006
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 86.3944%,  result -8.12442e-19 +/- 7.01905e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.28305e+217%,  result -5.3535e-235 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 76336.1%,  result 8.99814e-23 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 501748%,  result 1.36898e-23 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 2.04162e+227%,  result -3.3644e-245 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.00291929,4.5,1.08822,0.256288,7.68495e-13,3.92598e-22,0.610144
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 68.948%,  result -1.0178e-18 +/- 7.01752e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.58192e+217%,  result -4.34207e-235 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 95755.7%,  result 7.17328e-23 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 629372%,  result 1.09138e-23 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 2.51762e+227%,  result -2.7283e-245 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.00437894,4.5,1.01682,0.237079,6.71958e-13,3.12979e-22,0.566465
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 54.998%,  result -1.27552e-18 +/- 7.01509e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.96409e+217%,  result -3.4972e-235 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 120502%,  result 5.70019e-23 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 792039%,  result 8.67234e-24 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 3.12665e+227%,  result -2.19686e-245 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.00656841,4.5,0.952631,0.219067,5.9411e-13,2.48706e-22,0.525907
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 43.4347%,  result -1.61419e-18 +/- 7.01118e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 2.45688e+217%,  result -2.79575e-235 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 152050%,  result 4.51748e-23 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 999417%,  result 6.87283e-24 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 3.91264e+227%,  result -1.75555e-245 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.00985261,4.5,0.895614,0.202145,5.31675e-13,1.97103e-22,0.488422
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 21.186%,  result 3.31431e-18 +/- 7.0217e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 1343.89%,  result -5.2249e-20 +/- 7.02169e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 6.26143e+215%,  result -1.09701e-233 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 794.552%,  result 8.6449e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 5220.41%,  result 1.31576e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.65998e+225%,  result -4.13789e-243 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,1e-05,27,6.1313,1.45562,4.79867e-11,2.26323e-19,3.40597
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 17.8009%,  result 3.94457e-18 +/- 7.0217e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 1132.82%,  result -6.19844e-20 +/- 7.02169e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 7.17053e+215%,  result -9.57925e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 946.467%,  result 7.25733e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 6212.49%,  result 1.10565e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.901e+225%,  result -3.61327e-243 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,1.5e-05,27,5.70045,1.35359,4.05253e-11,1.90021e-19,3.1481
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 14.898%,  result 4.71318e-18 +/- 7.0217e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 951.87%,  result -7.37673e-20 +/- 7.02168e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 8.23132e+215%,  result -8.34474e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 1130.97%,  result 6.0734e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 7422.84%,  result 9.25363e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 2.18223e+225%,  result -3.14762e-243 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,2.25e-05,27,5.29229,1.25695,3.41671e-11,1.59024e-19,2.90531
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 12.4162%,  result 5.65529e-18 +/- 7.0217e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 797.173%,  result -8.80822e-20 +/- 7.02167e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 9.47279e+215%,  result -7.25111e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 1355.83%,  result 5.06614e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 8899.93%,  result 7.71785e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 2.51136e+225%,  result -2.7351e-243 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,3.375e-05,27,4.90761,1.16647,2.87644e-11,1.32648e-19,2.67707
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 10.3119%,  result 6.80931e-18 +/- 7.0217e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 663.228%,  result -1.05871e-19 +/- 7.02166e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.09302e+216%,  result -6.28427e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 1630.87%,  result 4.21176e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 10719.8%,  result 6.40762e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 2.89773e+225%,  result -2.37041e-243 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,5.0625e-05,27,4.54603,1.08075,2.41871e-11,1.10257e-19,2.4628
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 549.138%,  result -1.27867e-19 +/- 7.02164e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.26467e+216%,  result -5.43133e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 1968.39%,  result 3.48957e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 12943.2%,  result 5.3069e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 3.3528e+225%,  result -2.04869e-243 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,7.59375e-05,27,4.20883,1.00145,2.03212e-11,9.13471e-20,2.26196
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 454.887%,  result -1.54359e-19 +/- 7.02161e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.46752e+216%,  result -4.68057e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 2384.6%,  result 2.88049e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 15681.5%,  result 4.3802e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 3.89059e+225%,  result -1.7655e-243 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.000113906,27,3.89402,0.926918,1.70667e-11,7.54021e-20,2.07398
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 374.57%,  result -1.87457e-19 +/- 7.02156e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.70811e+216%,  result -4.02129e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 2899.58%,  result 2.3689e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 19069%,  result 3.60208e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 4.52844e+225%,  result -1.51682e-243 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.000170859,27,3.60026,0.857135,1.43362e-11,6.201e-20,1.89831
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 307.587%,  result -2.28277e-19 +/- 7.0215e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.99456e+216%,  result -3.44379e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 3539.28%,  result 1.94074e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 23239.9%,  result 2.95562e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 5.28785e+225%,  result -1.29898e-243 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.000256289,27,3.32254,0.791403,1.20537e-11,5.08126e-20,1.73438
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 252.628%,  result -2.77934e-19 +/- 7.02139e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 2.33696e+216%,  result -2.93922e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 4337.06%,  result 1.58375e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 28491.4%,  result 2.41084e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 6.19562e+225%,  result -1.10866e-243 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.000384434,27,3.0699,0.730753,1.01528e-11,4.14634e-20,1.58164
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 36.2251%,  result -0.00193209 +/- 0.0006999. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 205.044%,  result -3.42426e-19 +/- 7.02124e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 2.74801e+216%,  result -2.49957e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 5336.06%,  result 1.28725e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 35069.5%,  result 1.95863e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 7.28539e+225%,  result -9.42821e-244 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.00057665,27,2.83094,0.673087,8.57606e-12,3.36988e-20,1.43955
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 166.802%,  result -4.20917e-19 +/- 7.02099e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 3.24368e+216%,  result -2.1176e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 6591.38%,  result 1.04209e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 43331.5%,  result 1.58518e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 8.59955e+225%,  result -7.98742e-244 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.000864976,27,2.61115,0.620449,7.27363e-12,2.72799e-20,1.30758
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 134.653%,  result -5.21384e-19 +/- 7.02061e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 3.84426e+216%,  result -1.78677e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 8174.77%,  result 8.40247e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 53724.8%,  result 1.27852e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.01919e+226%,  result -6.73951e-244 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.00129746,27,2.40641,0.571237,6.20245e-12,2.19969e-20,1.18522
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 108.233%,  result -6.48598e-19 +/- 7.02e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 4.57565e+216%,  result -1.50117e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 10178.8%,  result 6.74816e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 66896.8%,  result 1.02678e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.21311e+226%,  result -5.66217e-244 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.0019462,27,2.22025,0.525638,5.32548e-12,1.7666e-20,1.07196
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 86.3944%,  result -8.12442e-19 +/- 7.01905e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 5.47113e+216%,  result -1.25547e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 12722.7%,  result 5.39888e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 83624.6%,  result 8.21388e-23 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.45055e+226%,  result -4.73533e-244 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.00291929,27,2.04496,0.482782,4.61097e-12,1.41335e-20,0.967318
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 68.948%,  result -1.0178e-18 +/- 7.01752e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 6.57383e+216%,  result -1.04487e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 15959.3%,  result 4.30397e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 104895%,  result 6.54826e-23 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.74295e+226%,  result -3.94091e-244 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.00437894,27,1.88598,0.442568,4.03175e-12,1.12672e-20,0.870847
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 54.998%,  result -1.27552e-18 +/- 7.01509e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 7.93996e+216%,  result -8.65096e-235 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 20083.6%,  result 3.42012e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 132006%,  result 5.2034e-23 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 2.10525e+226%,  result -3.26271e-244 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.00656841,27,1.74159,0.405648,3.56466e-12,8.95341e-21,0.782118
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 43.4347%,  result -1.61419e-18 +/- 7.01118e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 9.64346e+216%,  result -7.12278e-235 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 25341.6%,  result 2.71049e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 166570%,  result 4.1237e-23 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 2.5571e+226%,  result -2.68618e-244 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.00985261,27,1.61171,0.371496,3.19005e-12,7.09569e-21,0.70074
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 21.186%,  result 3.31431e-18 +/- 7.0217e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 1343.89%,  result -5.2249e-20 +/- 7.02169e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 5.29729e+215%,  result -1.29667e-233 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 476.731%,  result 1.44082e-20 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 3132.24%,  result 2.19294e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 8.42627e+224%,  result -8.15168e-243 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,1e-05,45,7.51857,1.79388,7.99778e-11,6.28675e-19,4.10209
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 17.8009%,  result 3.94457e-18 +/- 7.0217e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 1132.82%,  result -6.19844e-20 +/- 7.02169e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 6.04937e+215%,  result -1.13546e-233 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 567.88%,  result 1.20956e-20 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 3727.49%,  result 1.84275e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 9.62258e+224%,  result -7.13823e-243 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,1.5e-05,45,6.94515,1.66075,6.75421e-11,5.27836e-19,3.77466
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 14.898%,  result 4.71318e-18 +/- 7.0217e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 951.87%,  result -7.37673e-20 +/- 7.02168e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 6.92394e+215%,  result -9.92041e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 678.581%,  result 1.01223e-20 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 4453.71%,  result 1.54227e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.10137e+225%,  result -6.2366e-243 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,2.25e-05,45,6.41705,1.53465,5.69452e-11,4.41733e-19,3.46774
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 12.4162%,  result 5.65529e-18 +/- 7.0217e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 797.173%,  result -8.80822e-20 +/- 7.02167e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 7.94342e+215%,  result -8.64718e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 813.498%,  result 8.44357e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 5339.96%,  result 1.28631e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.26354e+225%,  result -5.43617e-243 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,3.375e-05,45,5.91847,1.41889,4.79406e-11,3.68465e-19,3.18046
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 10.3119%,  result 6.80931e-18 +/- 7.0217e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 663.228%,  result -1.05871e-19 +/- 7.02166e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 9.13503e+215%,  result -7.51921e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 978.521%,  result 7.0196e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 6431.86%,  result 1.06794e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.45309e+225%,  result -4.72705e-243 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,5.0625e-05,45,5.45622,1.30725,4.03119e-11,3.06271e-19,2.91196
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 549.138%,  result -1.27867e-19 +/- 7.02164e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.05327e+216%,  result -6.52145e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 1181.03%,  result 5.81595e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 7765.93%,  result 8.84483e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.67541e+225%,  result -4.09979e-243 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,7.59375e-05,45,5.02907,1.20551,3.38687e-11,2.53742e-19,2.66137
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 454.887%,  result -1.54359e-19 +/- 7.02161e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.21772e+216%,  result -5.64071e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 1430.76%,  result 4.80081e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 9408.91%,  result 7.30034e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.93701e+225%,  result -3.5461e-243 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.000113906,45,4.6276,1.11139,2.84445e-11,2.0945e-19,2.42786
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 374.57%,  result -1.87457e-19 +/- 7.02156e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.41189e+216%,  result -4.86499e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 1739.75%,  result 3.94817e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 11441.4%,  result 6.00347e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 2.24586e+225%,  result -3.05843e-243 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.000170859,45,4.25903,1.02299,2.38937e-11,1.7225e-19,2.21059
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 307.587%,  result -2.28277e-19 +/- 7.0215e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.64194e+216%,  result -4.18335e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 2123.57%,  result 3.23457e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 13943.9%,  result 4.92604e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 2.61181e+225%,  result -2.62991e-243 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.000256289,45,3.91378,0.94029,2.00895e-11,1.41146e-19,2.00874
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 252.628%,  result -2.77934e-19 +/- 7.02139e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.91554e+216%,  result -3.58584e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 2602.24%,  result 2.63958e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 17094.8%,  result 4.01807e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 3.04702e+225%,  result -2.25428e-243 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.000384434,45,3.5958,0.863825,1.69213e-11,1.15176e-19,1.82149
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 13.2908%,  result -0.004091 +/- 0.000543729. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 205.044%,  result -3.42426e-19 +/- 7.02124e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 2.2422e+216%,  result -3.06343e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 3201.64%,  result 2.14541e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 21041.7%,  result 3.26439e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 3.56664e+225%,  result -1.92585e-243 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.00057665,45,3.30228,0.792545,1.42934e-11,9.36077e-20,1.64809
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 166.802%,  result -4.20917e-19 +/- 7.02099e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 2.63388e+216%,  result -2.60788e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 3954.83%,  result 1.73682e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 25998.9%,  result 2.64197e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 4.18969e+225%,  result -1.63946e-243 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.000864976,45,3.02912,0.728148,1.21227e-11,7.57775e-20,1.48775
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 134.653%,  result -5.21384e-19 +/- 7.02061e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 3.10557e+216%,  result -2.21177e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 4904.86%,  result 1.40041e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 32234.9%,  result 2.13087e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 4.94004e+225%,  result -1.39044e-243 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.00129746,45,2.78132,0.667668,1.03374e-11,6.11024e-20,1.33976
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 108.233%,  result -6.48598e-19 +/- 7.02e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 3.67631e+216%,  result -1.8684e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 6107.29%,  result 1.12469e-21 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 40138.1%,  result 1.7113e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 5.84795e+225%,  result -1.17457e-243 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.0019462,45,2.55165,0.612112,8.8758e-12,4.90722e-20,1.2034
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 86.3944%,  result -8.12442e-19 +/- 7.01905e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 4.37033e+216%,  result -1.5717e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 7633.61%,  result 8.99814e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 50174.8%,  result 1.36898e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 6.95202e+225%,  result -9.88034e-244 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.00291929,45,2.34127,0.560368,7.68495e-12,3.92598e-20,1.07802
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 68.948%,  result -1.0178e-18 +/- 7.01752e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 5.21873e+216%,  result -1.31619e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 9575.57%,  result 7.17328e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 62937.2%,  result 1.09138e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 8.30173e+225%,  result -8.27397e-244 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.00437894,45,2.15055,0.51221,6.71958e-12,3.12979e-20,0.962967
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 54.998%,  result -1.27552e-18 +/- 7.01509e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 6.26168e+216%,  result -1.09696e-234 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 12050.2%,  result 5.70019e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 79203.9%,  result 8.67234e-23 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 9.96107e+225%,  result -6.89567e-244 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.00656841,45,1.97637,0.468549,5.9411e-12,2.48706e-20,0.857655
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 43.4347%,  result -1.61419e-18 +/- 7.01118e-19. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 7.55149e+216%,  result -9.09599e-235 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 3) accuracy 15205%,  result 4.51748e-22 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 4) accuracy 99941.7%,  result 6.87283e-23 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 5) accuracy 1.20134e+226%,  result -5.71765e-244 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 6) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+# Warning: Cuba (vegas) integration (dimension 7) accuracy inf%,  result 0 +/- 6.86883e-20. It is recommended to use more MC integration points
+LO_MVe,0.00985261,45,1.82156,0.427318,5.31675e-12,1.97103e-20,0.761538
